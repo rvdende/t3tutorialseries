@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import { useState } from "react";
 
 import PageComponent from "~/components/pagecomponent";
@@ -36,6 +37,14 @@ const Home: NextPage = () => {
           >
             SEND
           </button>
+          <div className="flex flex-col gap-4 bg-sky-100 p-5 text-black">
+            <Link href="/blog/first" className="hover:underline">
+              First Blog post
+            </Link>
+            <Link href="/blog/second" className="hover:underline">
+              Second Blog post
+            </Link>
+          </div>
 
           <PageComponent />
           <PageComponent />
