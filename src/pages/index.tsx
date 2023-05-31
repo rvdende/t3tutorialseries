@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 
 import PageComponent from "~/components/pagecomponent";
+import { StateDemo } from "~/components/stateDemo";
+import { ZustandDemo } from "~/components/zustandDemo";
 import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
@@ -19,6 +21,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
+        <ZustandDemo />
+        <StateDemo />
         <pre>{JSON.stringify(fancyapi.data, null, 2)}</pre>
 
         <div className="m-10 rounded-xl bg-indigo-500 p-10 text-white">
